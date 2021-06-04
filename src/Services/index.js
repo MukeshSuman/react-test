@@ -23,13 +23,6 @@ export const addCart = (x) => {
 
 export const removeCart = (x) => {
     let data = getCart();
-    data = data.filter(item => item.id != x.id)
+    data = data.filter(item => item.id !== x.id)
     return updateCart(data);
-}
-
-
-export default {
-    getCart,
-    addCart,
-    removeCart
 }

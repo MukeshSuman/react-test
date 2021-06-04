@@ -68,10 +68,11 @@ const Booking = () => {
             if (item.id === x.id) {
                 isExists = true;
             }
+            return item
         })
         if (x.availability && !isExists) {
             let data = classSchedule.map((item, i) => {
-                if (item.id == x.id) {
+                if (item.id === x.id) {
                     item.availability = item.availability - 1;
                 }
                 return item
@@ -84,9 +85,9 @@ const Booking = () => {
     }
 
     const action = (actionName, data) => {
-        if (actionName == "book") {
+        if (actionName === "book") {
             bookNow(data)
-        } else if (actionName == "cancel") {
+        } else if (actionName === "cancel") {
             let updatedData = removeCart(data);
             setCartItem(updatedData);
             setCartLen(updatedData.length)

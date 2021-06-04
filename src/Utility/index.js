@@ -43,16 +43,7 @@ export const separateDaysByDates = (dateList = []) => {
   dateList.map(date => {
     let d = new Date(date).getDay()
     data[days[d]].push(date)
+    return date
   })
   return data;
-}
-
-
-
-export default {
-  randomNumber,
-  convertToPST,
-  getDaysArray,
-  timeFrom,
-  separateDaysByDates
 }
