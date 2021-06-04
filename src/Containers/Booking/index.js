@@ -35,7 +35,7 @@ import './Booking.css';
 // }]
 
 const prepareData = () => {
-    const dateList = timeFrom(-15);
+    const dateList = timeFrom(-60);
     let data = dateList.map((item, i) => {
         const newData = {
             id: new Date().valueOf() + i,
