@@ -1,0 +1,46 @@
+.main {
+    background-color: #ffffff;
+}
+
+thead {
+    background-color: #172269;
+    color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+  
+th, td {
+    padding: 15px;
+}
+
+button {
+    border: 1px solid #ff000000;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+button.book, button.cancel {
+    background-color: #f86801;
+    cursor: pointer;
+}
+
+button.full {
+    background-color: #cf3e3d;
+}
+
+.separate-elem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count {
+    border: 1px solid #000;
+    border-radius: 19px;
+}
